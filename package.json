@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/artem-shadrin/ads/issues"
   },
-  "homepage": "https://github.com/artem-shadrin/ads#readme"
+  "homepage": "https://github.com/artem-shadrin/ads#readme",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
 }

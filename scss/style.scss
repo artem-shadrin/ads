@@ -1,0 +1,170 @@
+// ***SWIPER*** //
+.swiper-container {
+    width: 224px;
+    height: 260px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+// ***/SWIPER*** //
+
+// ***COMMON*** //
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn__active {
+    * {
+        fill: aqua;
+    }
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none;
+}
+
+// ***/COMMON*** //
+
+// ***CARD*** //
+.cards__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: #E5E5E5;
+}
+
+.card {
+    flex: 0 0 224px;
+    position: relative;
+    background: #ffffff;
+    width: 224px;
+    height: 368px;
+    margin-bottom: 24px;
+    &__description {
+        padding: 2px 12px 12px 12px;
+    }
+
+    &__like {
+        position: absolute;
+        top: 205px;
+        right: 14px;
+        z-index: 30;
+
+        &:hover {
+            * {
+                fill: aqua;
+            }
+        }
+    }
+
+    &__compare {
+        position: absolute;
+        top: 166px;
+        right: 12px;
+        z-index: 30;
+
+        &:hover {
+            * {
+                fill: aqua;
+            }
+        }
+    }
+
+    &__seen {
+        display: none;
+        position: absolute;
+        top: 12px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 5px;
+        background: rgba(44, 44, 44, 0.74);
+        border-radius: 8px;
+        margin: 0 65px;
+        z-index: 31;
+    }
+
+    &__old-price {
+        font-size: 14px;
+        line-height: 16px;
+        color: #5A5A5A;
+        text-decoration: line-through;
+        margin-bottom: 1px;
+    }
+
+    &__price {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 8px;
+        color: #2C2C2C;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2C2C2C;
+        margin-bottom: 14px;
+    }
+
+    &__locality {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 14px;
+        color: #8F8F8F;
+    }
+
+    &__date {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+
+        text-align: right;
+
+        color: #8F8F8F;
+    }
+    &__transaction{
+        position: absolute;
+        right: 12px;
+        bottom: 80px;
+    }
+    &__delivering{
+        position: absolute;
+        bottom: 80px;
+        right: 44px;
+    }
+    .icon:hover {
+        *{
+            fill: limegreen
+        }
+    }
+}
+
+// ***/CARD*** //
