@@ -31,15 +31,20 @@ body {
 .hide {
   display: none; }
 
-.cards__container {
+.ads {
   max-width: 1140px;
+  margin: 0 auto;
+  background: #E5E5E5;
+  padding-bottom: 40px; }
+
+.cards__container {
+  max-width: 968px;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  align-content: center;
-  background: #E5E5E5; }
+  align-content: center; }
 
 .card {
   flex: 0 0 224px;
@@ -55,15 +60,11 @@ body {
     top: 205px;
     right: 14px;
     z-index: 30; }
-    .card__like:hover * {
-      fill: aqua; }
   .card__compare {
     position: absolute;
     top: 166px;
     right: 12px;
     z-index: 30; }
-    .card__compare:hover * {
-      fill: aqua; }
   .card__seen {
     display: none;
     position: absolute;
@@ -117,5 +118,32 @@ body {
     right: 44px; }
   .card .icon:hover * {
     fill: limegreen; }
+  .card__btn-more {
+    width: 200px;
+    text-align: right;
+    margin: 10px auto 30px; }
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto; }
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #000 transparent #000 transparent;
+  animation: lds-dual-ring 1.2s linear infinite; }
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=style.css.map */
